@@ -1,0 +1,103 @@
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="../../img/icon.png">
+		<link rel="stylesheet" href="../../css/fontello.css">
+		<link rel="stylesheet" href="../../css/payment.css">
+		<script type="text/javascript" src="../../js/payment.js" defer></script>
+		<title>Payment</title>
+	</head>
+	<body>
+		<div class="main">
+			<a class="return-button" href="../cart/">
+				<i class="icon-left-open"></i><span>VOLTAR</span>
+			</a>
+			<h1>PAGAMENTO</h1>
+			<div class="row">
+				<div class="col-75">
+					<div class="container">
+						<form action="/action_page.php">
+			
+							<div class="row">
+								<div class="col-50">
+									<h3>Endereço de envio</h3>
+									<label for="street">Rua</label>
+									<input type="text" id="street" name="street" placeholder="Av. Sete de Setembro">
+									<div class="row">
+										<div class="col-50">
+											<label for="country">País</label>
+											<input type="text" id="country" name="country" placeholder="Brasil">
+										</div>
+										<div class="col-50">
+											<label for="state">Estado</label>
+											<input type="text" id="state" name="state" placeholder="Paraná">
+										</div>
+									</div>
+									<label for="city">Cidade</label>
+									<input type="text" id="city" name="city" placeholder="Curitiba">
+									<div class="row">
+										<div class="col-50">
+											<label for="district">Bairro</label>
+											<input type="text" id="district" name="district" placeholder="Centro">
+										</div>
+										<div class="col-50">
+											<label for="cep">Cep</label>
+											<input type="text" id="cep" name="cep" placeholder="35500-011">
+										</div>
+									</div>
+								</div>
+			
+								<div class="col-50">
+									<h3>Pagamento</h3>
+									<label for="fname">Cartões Aceitos</label>
+									<div class="icon-container">
+										<i class="icon-cc-visa" style="color:navy;"></i>
+										<i class="icon-cc-mastercard" style="color:red;"></i>
+										<i class="icon-cc-paypal" style="color:blue;"></i>
+									</div>
+									<label for="cname">Nome no Cartão</label>
+									<input type="text" id="cname" name="cardname" placeholder="João Silva">
+									<div class="row">
+										<div class="col-75">
+											<label for="ccnum">Número do Cartão</label>
+											<input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+										</div>
+										<div class="col-25">
+											<label for="cvc">CVC</label>
+											<input type="text" id="cvc" name="cvc" placeholder="352">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-50">
+											<label for="expmonth">Mês</label>
+											<input type="text" id="expmonth" name="expmonth" placeholder="05">
+										</div>
+										<div class="col-50">
+											<label for="expyear">Ano</label>
+											<input type="text" id="expyear" name="expyear" placeholder="2030">
+										</div>
+									</div>
+								</div>
+			
+							</div>
+							<input type="submit" value="FINALIZAR COMPRA" class="btn">
+						</form>
+					</div>
+				</div>
+				<div class="col-25">
+					<div class="container">
+						<h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+						<p><a href="#">Product 1</a> <span class="price">$15</span></p>
+						<p><a href="#">Product 2</a> <span class="price">$5</span></p>
+						<p><a href="#">Product 3</a> <span class="price">$8</span></p>
+						<p><a href="#">Product 4</a> <span class="price">$2</span></p>
+						<hr>
+						<p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
