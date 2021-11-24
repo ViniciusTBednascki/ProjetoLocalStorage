@@ -29,6 +29,15 @@ var productList = [
 ]
 var cart = []
 
+if(window.localStorage.getItem("user") == null) {
+    window.location.href = "../auth"
+}else {
+    user = JSON.parse(window.localStorage.getItem("user"))
+    if(user.email == "") {
+        window.location.href = "../auth"
+    }
+}
+
 if(window.localStorage.getItem("cart") == null) {
     window.localStorage.setItem("cart", JSON.stringify(cart))
 }else {
