@@ -20,6 +20,32 @@ if(window.localStorage.getItem("cart") == null) {
     }
 }
 
+function mountPaymentCart() {
+    let totalCart = 0;
+    let cartNum = 0;
+    
+    cart.forEach(product => {
+        cartNum += product[1]
+    })
+
+    let content = `<h3>Carrinho <span class="price contrast"><i class="icon-basket"></i>${cartNum}</span></h3>`
+    document.querySelector("div.container.cart").innerHTML = content
+    
+    let totalProduct = 0
+    cart.forEach(product => {
+        totalProduct = product[0].price * product[1]
+        totalCart += totalProduct
+
+        content = `<p><span>${product[0].title} (${product[1]})</span> <span class="price">R$${totalProduct}</span></p>`
+
+        document.querySelector("div.container.cart").innerHTML += content
+    })
+    
+    content = '<hr>'
+    content += `<p>Total <span class="price contrast">R$${totalCart}</span></p>`
+    document.querySelector("div.container.cart").innerHTML += content
+}
+
 function paying() {
     let inputs = document.querySelectorAll(".form input")
     let allFilled = true
@@ -49,3 +75,5 @@ function logout() {
     window.localStorage.removeItem("cart")
     window.location.href = "../auth"
 }
+
+mountPaymentCart()
