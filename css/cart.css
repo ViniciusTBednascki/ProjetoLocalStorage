@@ -30,6 +30,18 @@ div.main h1 {
     color: #AAA;
     border-color: #AAA;
 }
+.total-price {
+    width: 350px;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px #666A;
+}
 .cart-product {
     height: 100px;
     width: 680px;

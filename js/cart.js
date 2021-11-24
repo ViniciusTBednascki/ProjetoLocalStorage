@@ -36,10 +36,18 @@ function mountPaymentButton() {
         }
 }
 
+function updatedTotal(total) {
+    let content = `<span>TOTAL: R$${total}</span>`
+
+    document.querySelector(".total-price").innerHTML = content
+}
+
 function mountCart() {
     document.querySelector("div.products").innerHTML = ""
+    let total = 0
     
     cart.forEach((product, index) => {
+        total += product[0].price * product[1]
 
         let content = ''
         content += '<div class="cart-product">'
@@ -70,6 +78,8 @@ function mountCart() {
 
         document.querySelector("div.products").innerHTML += content
     })
+
+    updatedTotal(total)
 
     mountPaymentButton()
 }
