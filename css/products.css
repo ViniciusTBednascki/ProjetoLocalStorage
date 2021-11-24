@@ -1,0 +1,119 @@
+@font-face {
+    font-family: cream_cake;
+    src: url("../css/cream_cake.otf");
+}
+body {
+    margin: 0;
+}
+div.main {
+    width: 100%;
+    height: 96%;
+    background: linear-gradient(to left, #141e30, #243b55);
+}
+div.main h1 {
+    margin: 0;
+    padding: 10px 0px;
+    padding-left: 10%;
+    text-align: center;
+    color: #FFF;
+}
+.card {
+    width: 200px;
+    height: 260px;
+    margin: 10px 5px;
+    float: left;
+    border-radius: 10px;
+    background-color: #0004;
+}
+.card-img {
+    width: 100%;
+    height: 180px;
+}
+.card-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.card-description {
+    width: 100%;
+    height: 20px;
+    background-color: #5684AE;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 5px;
+}
+.card-price {
+    width: 100%;
+    height: 20px;
+    background-color: #C3FBF4;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 5px;
+}
+.card-button {
+    width: 100%;
+    height: 30px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    font-family: cream_cake;
+    font-size: 20px;
+    cursor: pointer;
+}
+.card-button:hover {
+    color: #AAA;
+}
+.card-button:active {
+    background-color: #048243;
+}
+.purchased {
+    cursor: default;
+    background-color: #048243;
+}
+.purchased:hover {
+    color: #FFF;
+}
+.cart-button {
+    width: 10%;
+    float:right;
+    margin-right: 1%;
+    margin-top: 2%;
+    background-color: #000;
+    color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 8px;
+    padding: 2px 5px;
+    text-align: center;
+    text-decoration: none;
+}
+.cart-button:hover {
+    color: #AAA;
+    border-color: #AAA;
+}
+.footer {
+    width: 100%;
+    height: 4%;
+    background-color: #000;
+    border-top: 1px solid #FFF;
+    color: #FFF;
+}
+.logout-button {
+    float: right;
+    width: 10%;
+    padding: 4px;
+    text-align: center;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    cursor: pointer;
+}
+.logout-button:hover {
+    color: #AAA;
+}
+.logout-button i{
+    margin: 0px 5px;
+}
