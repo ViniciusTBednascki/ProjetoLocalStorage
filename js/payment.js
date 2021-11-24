@@ -20,6 +20,19 @@ if(window.localStorage.getItem("cart") == null) {
     }
 }
 
+function changeToPurchasedPage() {
+    let content  = ''
+
+    content += '<a class="return-button" href="../products/">'
+    content += '<i class="icon-left-open"></i><span>VOLTAR</span>'
+    content += '</a>'
+    content += '<h1 class="purchased">COMPRA FINALIZADA</h1>'
+    content += '<h2 class="purchased">Caso queira fazer mais uma compra clique em "VOLTAR".'
+    content += '<br>Caso contrário, clique em "SAIR" e volte sempre!</h2>'
+
+    document.querySelector("div.main").innerHTML = content
+}
+
 function mountPaymentCart() {
     let totalCart = 0;
     let cartNum = 0;
@@ -66,7 +79,9 @@ function paying() {
     }
 
     if(allFilled) {
-        console.log("Foi")
+        window.localStorage.removeItem("cart")
+
+        changeToPurchasedPage()
     }
 }
 
