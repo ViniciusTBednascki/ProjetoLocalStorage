@@ -10,16 +10,16 @@ div.main {
 }
 div.main h1 {
     margin: 0;
-    padding: 10px 0px;
-    padding-right: 12%;
+    padding-top: 40px;
+    margin-bottom: 10px;
     text-align: center;
     color: white;
 }
 .return-button {
-    width: 10%;
-    float: left;
-    margin-left: 1%;
-    margin-top: 2%;
+    width: 140px;
+    position: fixed;
+    top: 12px;
+    left: 16px;
     background-color: #000;
     color: #FFF;
     border: 1px solid #FFF;

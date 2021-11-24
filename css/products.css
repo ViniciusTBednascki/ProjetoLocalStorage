@@ -9,19 +9,20 @@ html, body {
 div.main {
     width: 100%;
     min-height: 100%;
-    padding-bottom: 40px;
     background: linear-gradient(to left, #141e30, #243b55);
 }
 div.main h1 {
     margin: 0;
-    padding: 10px 0px;
-    padding-left: 10%;
+    padding-top: 40px;
+    margin-bottom: 10px;
     text-align: center;
     color: #FFF;
 }
 .products {
     display: flex;
     flex-wrap: wrap;
+    padding: 0px 20px;
+    padding-bottom: 40px;
 }
 .card {
     width: 200px;
@@ -83,10 +84,10 @@ div.main h1 {
     color: #FFF;
 }
 .cart-button {
-    width: 10%;
-    float:right;
-    margin-right: 1%;
-    margin-top: 2%;
+    width: 140px;
+    position: fixed;
+    top: 12px;
+    right: 16px;
     background-color: #000;
     color: #FFF;
     border: 1px solid #FFF;
