@@ -2,8 +2,9 @@
     font-family: cream_cake;
     src: url("../css/cream_cake.otf");
 }
-body {
+html, body {
     margin: 0;
+    height: 100%;
 }
 div.main {
     width: 100%;
